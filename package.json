@@ -1,0 +1,23 @@
+{
+    "name": "request-monitoring-system",
+    "version": "1.0.0",
+    "description": "System for monitoring failed POST requests",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-rate-limit": "^5.3.0",
+        "mongoose": "^6.0.0",
+        "node-cache": "^5.1.2",
+        "nodemailer": "^6.6.3",
+        "redis": "^3.1.2",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
