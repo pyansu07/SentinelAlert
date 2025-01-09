@@ -109,8 +109,7 @@ The application is built with the following components:
 The system tracks:
 - Failed request attempts
 - IP addresses of suspicious activity
-- Request patterns and trends
-- System performance metrics
+
 
 ## 🔒 Security Features
 
