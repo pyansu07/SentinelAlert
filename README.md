@@ -12,7 +12,7 @@ A robust Node.js application designed to monitor HTTP requests, track failed att
 - **Clustering**: Utilizes multiple CPU cores for improved performance
 - **Caching**: Implements in-memory caching for optimized performance
 
-## Flowchart
+## 🗺️ Flowchart
 
 ![Flowchart](https://github.com/user-attachments/assets/bb14bdc1-b613-47e8-be9d-1bfa1ef90ae9)
 
