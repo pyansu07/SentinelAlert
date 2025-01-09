@@ -132,4 +132,4 @@ The system tracks:
 
 ---
 
-**Note**: Remember to replace sensitive information in the `.env` file with your own credentials and never commit sensitive data to version control.
+**Note**: Remember to replace sensitive information in the `.env` file with your own credentials.
