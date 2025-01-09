@@ -1,4 +1,4 @@
-# Request Monitoring System
+# SentinelAlert
 
 A robust Node.js application designed to monitor HTTP requests, track failed attempts, and alert administrators about potential security threats. The system includes rate limiting, request validation, and metrics collection capabilities.
 
@@ -12,28 +12,33 @@ A robust Node.js application designed to monitor HTTP requests, track failed att
 - **Clustering**: Utilizes multiple CPU cores for improved performance
 - **Caching**: Implements in-memory caching for optimized performance
 
+## Flowchart
+
+![Flowchart](https://github.com/user-attachments/assets/bb14bdc1-b613-47e8-be9d-1bfa1ef90ae9)
+
+
 ## 📋 Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js
 - MongoDB
-- Redis (optional, for distributed caching)
+- Distributed caching
 - SMTP access (for email alerts)
 
 ## 🛠️ Installation
 
 1. Clone the repository:
-`
-git clone https://github.com/yourusername/request-monitoring-system.git
-cd request-monitoring-system
-`
+```bash
+git clone https://github.com/yourusername/SentinelAlert.git
+cd SentinelAlert
+```
 
 2. Install dependencies:
-`
+```bash
 npm install
-`
+```
 
 3. Create a `.env` file in the root directory with the following configuration:
-`
+```bash
 MONGODB_URI=mongodb://localhost:27017/request-monitor
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-specific-password
@@ -41,12 +46,12 @@ EMAIL_FROM=your-email@gmail.com
 ALERT_EMAIL_TO=alert-recipient@gmail.com
 VALID_TOKEN=your-valid-token
 PORT=3000
-`
+```
 
 ## ⚙️ Configuration
 
 The application can be configured through `config/config.js`. Key configuration options include:
-`
+```bash
 {
     monitoring: {
         timeWindowMinutes: 10,        // Time window for tracking failed attempts
@@ -54,19 +59,19 @@ The application can be configured through `config/config.js`. Key configuration 
         requestsPerSecondLimit: 500   // Rate limiting threshold
     }
 }
-`
+```
 ## 🚦 Usage
 ### Starting the Application
-`
+```bash
 # Development mode
 npm run dev
 
 # Production mode with clustering
 npm start
-`
+```
 ### API Endpoints
 #### Submit Request
-`
+```bash
 POST /api/submit
 Content-Type: application/json
 Authorization: Bearer your-token
@@ -74,19 +79,19 @@ Authorization: Bearer your-token
 {
   "data": "your-data"
 }
-`
+```
 #### Get Metrics
-`
+```bash
 GET /metrics?startDate=2024-01-01&endDate=2024-01-02&ip=optional-ip-address
-`
+```
 
 ### Testing Rate Limiting
 
 The repository includes a test script to simulate multiple requests:
-`
+```bash
 node test-rate-limit.js
 
-`
+```
 
 
 ## 🏗️ Architecture
@@ -117,7 +122,7 @@ The system tracks:
 
 ## 👥 Authors
 
-- Your Name - Initial work - [YourGithub](https://github.com/pyasnu07)
+- Pyansu Nahak - Initial work - [here](https://github.com/pyasnu07)
 
 ## 🙏 Acknowledgments
 
