@@ -28,7 +28,7 @@ A robust Node.js application designed to monitor HTTP requests, track failed att
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/SentinelAlert.git
+git clone https://github.com/pyansu07/SentinelAlert.git
 cd SentinelAlert
 ```
 
@@ -125,10 +125,7 @@ The system tracks:
 
 ## 🙏 Acknowledgments
 
-- Node.js community
-- Express.js community
-- MongoDB community
-
+- Node.js (https://nodejs.org/api/cluster.html)
 
 ---
 
