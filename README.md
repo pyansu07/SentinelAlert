@@ -119,10 +119,6 @@ The system tracks:
 - Suspicious activity monitoring
 - Email alerts for security threats
 
-## 👥 Authors
-
-- Pyansu Nahak - Initial work - [here](https://github.com/pyasnu07)
-
 ## 🙏 Acknowledgments
 
 - Node.js (https://nodejs.org/api/cluster.html)
